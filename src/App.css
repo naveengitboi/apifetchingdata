@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body 
+{
+    background-color: rgb(45, 45, 45);
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 5rem;
+    border: 2px solid red;
+}
+input {
+    padding: .5rem 1rem ;
+    font-size: 1.25rem;
+    color: black;
+    outline: none;
+    border: none;
+    margin-bottom: 3rem;
+}
+.container 
+{
+    border: 2px solid white;
+    display: grid;
+    gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movieContainer {
+    padding: 2rem;
+    position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.movieContainer .year 
+{
+    position: absolute;
+    top: .85rem;
+    left: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movieContainer img 
+{
+    width: 250px;
+    height: 300px;
+    border: 1px solid red;
+    object-fit: cover;
+    object-position: center;
 }
